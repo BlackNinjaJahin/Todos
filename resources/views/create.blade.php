@@ -19,7 +19,7 @@
     <form action="{{route("todo.store")}}" method="post">
     @csrf
         <!-- Name -->
-        <label for ="" class="form-label mt-2">Name</label>
+        <label for ="" class="form-label mt-2">Title</label>
         <input type="text" name="name" class="form-control"">
           <span class="text-danger">
             @error('name')
@@ -27,14 +27,14 @@
             @enderror
           </span>    
         <!-- Work -->
-        <label for ="" class="form-label mt-2">work</label>
+        <label for ="" class="form-label mt-2">Description</label>
         <input type="text" name="work" class="form-control" >
         <span class="text-danger">
             @error('work')
             {{$message}}
             @enderror
         <!-- Due Date -->
-        <label for ="" class="form-label mt-2 text-black">Due Date</label> 
+        <label for ="" class="form-label mt-2 text-black">Status</label> 
         <input type="date" name="dueDate" class="form-control" >
         <span class="text-danger">
             @error('dueDate')
